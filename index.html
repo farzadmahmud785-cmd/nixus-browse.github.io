@@ -33,17 +33,13 @@
       letter-spacing: 1px;
     }
 
-    <!-- Video Showcase Section -->
-    <div class="video-container">
-      <div class="video-wrapper">
-        <video autoplay muted loop playsinline preload="auto">
-          <source src="preview.mov" type="video/quicktime">
-          <source src="preview.mov" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="video-overlay"></div>
-      </div>
-    </div>
+    /* Video Showcase Section */
+    .video-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
 
     .video-wrapper {
       position: relative;
@@ -61,7 +57,7 @@
       display: block;
     }
 
-    /* Subtle light tint so video stays bright */
+    /* Light tint overlay */
     .video-overlay {
       position: absolute;
       top: 0;
@@ -152,8 +148,8 @@
   <!-- Video Showcase Section -->
   <div class="video-container">
     <div class="video-wrapper">
-      <video autoplay muted loop playsinline>
-        <source src="preview.mp4" type="video/mp4">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="preview.mov" type="video/quicktime">
         Your browser does not support the video tag.
       </video>
       <div class="video-overlay"></div>
@@ -179,4 +175,4 @@
   </main>
 
 </body>
-</html> 
+</html>
